@@ -477,19 +477,16 @@ body {
   color: var(--color-black);
 }
 .social-icons__icon--facebook:hover {
-  color: #1877f2;
+  color: var(--primary-color);
 }
 .social-icons__icon--twitter:hover {
-  color: #1da1f2;
+  color: var(--primary-color);
 }
 .social-icons__icon--instagram:hover {
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary-color);
 }
 .social-icons__icon--linkedin:hover {
-  color: #0a66c2;
+  color: var(--primary-color);
 }
 
 .section-hero {

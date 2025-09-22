@@ -198,27 +198,17 @@
     color: var(--color-black);
 
     &--facebook:hover {
-      color: #1877f2;
+      color: var(--primary-color);
     }
     &--twitter:hover {
-      color: #1da1f2;
+      color: var(--primary-color);
     }
     &--instagram:hover {
-      background: linear-gradient(
-        45deg,
-        #feda75,
-        #fa7e1e,
-        #d62976,
-        #962fbf,
-        #4f5bd5
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: var(--primary-color);
     }
 
     &--linkedin:hover {
-      color: #0a66c2;
+      color: var(--primary-color);
     }
   }
 }

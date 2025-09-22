@@ -45,14 +45,14 @@ The project was built using:
 
 sass/
 │
-├── abstracts/ # Variables, mixins, functions
-├── base/ # Reset, typography, helpers
-├── components/ # Small UI components (buttons, cards, etc.)
-├── layout/ # Layout-related code (header, footer, grid, navigation)
+├── abstracts/ # Contains variables, mixins, and functions
+├── base/ # Includes reset, typography, and helper styles
+├── components/ # Styles for small UI components like buttons, cards, etc.
+├── layout/ # Layout-related styles: header, footer, grid, navigation
 ├── pages/ # Page-specific styles
-├── themes/ # Theme-related files
+├── themes/ # Theme-related files (colors, themes)
 ├── vendors/ # Third-party styles
-└── main.scss # Main Sass entry file
+└── main.scss # Main Sass entry file that imports all other files
 
 ---
 
@@ -64,7 +64,7 @@ sass/
 npm install
 ```
 
-## Start development environment
+### 2️⃣ Start development environment
 
 This runs:
 Backend server (Express.js)
@@ -75,7 +75,7 @@ Sass watcher
 npm start
 ```
 
-## Additional Commands
+## 3️⃣ Additional Commands
 
 Watch Sass only:
 
