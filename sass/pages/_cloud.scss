@@ -1,0 +1,26 @@
+// Cloud
+
+.profile-img {
+  height: 1.8rem;
+}
+
+.bottom__end--cloud {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-gray-dark);
+  padding: 1.8rem 1rem;
+
+  @include respond(phone) {
+    padding: 3.8rem 1.2rem;
+    margin-right: 2.2rem;
+  }
+
+  &:hover {
+    background-color: var(--color-gray-dark);
+  }
+}
+
+.username {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,38 @@
+//ORDER: Base + typography > general layout + grid > page layout > components
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == big-desktop {
+    //2000px
+    @media (min-width: 125em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mid-desktop {
+    //1600px
+    @media (max-width: 100em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    //1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    //900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone {
+    //600px
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+}

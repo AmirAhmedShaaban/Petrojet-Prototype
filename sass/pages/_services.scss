@@ -1,0 +1,86 @@
+// Services
+
+.section-services {
+  padding: 4.8rem 0 4.8rem 0;
+  margin: 4.8rem 0;
+}
+
+.services {
+  background-color: var(--color-ashy-dark);
+  padding: 8% 6.4rem;
+  margin: -4rem;
+}
+
+.services__title {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.services__title2 {
+  color: var(--color-white);
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-bottom: 6.4rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.services__item {
+  background-color: var(--color-ashy-light);
+  border-radius: 10px;
+  padding: 4.8rem;
+}
+
+.icon-container {
+  display: inline-block;
+  background-color: var(--color-ashy-darker);
+  padding: 2.4rem;
+  border-radius: 10px;
+  transition: all 0.4s;
+  margin-bottom: 3.2rem;
+}
+
+.services__icon {
+  height: 6.4rem;
+  fill: var(--color-white);
+  stroke: var(--color-white);
+}
+
+.services__item:hover .icon-container {
+  background-color: var(--primary-color);
+}
+
+.text-container {
+  background-color: var(--color-ashy-darker);
+  padding: 3.2rem;
+  border-radius: 10px;
+}
+
+.services__heading {
+  color: var(--color-white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.services__description {
+  color: #78787f;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.8;
+}

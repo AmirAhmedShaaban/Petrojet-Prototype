@@ -1,0 +1,224 @@
+//header
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.logo {
+  width: 16rem;
+  margin: 3.6rem 4.4rem;
+
+  @include respond(phone) {
+    width: 18rem;
+    margin: 9.6rem 4.4rem;
+  }
+}
+
+.logo-container {
+  border-right: 0.2px var(--color-border) solid;
+}
+
+.header__side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2px var(--color-border) solid;
+  padding: 1.6rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+
+  @include respond(phone) {
+    gap: 2.4rem;
+  }
+}
+
+.single-info {
+  a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-black);
+  }
+}
+
+.top__start {
+  display: flex;
+  gap: 4.4rem;
+  padding: 1.6rem;
+
+  @include respond(phone) {
+    flex-wrap: wrap;
+  }
+}
+
+.bottom__start {
+  display: flex;
+  gap: 4.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.6rem;
+
+  @include respond(phone) {
+    flex-wrap: wrap;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: var(--color-black);
+    transition: all 0.1s ease;
+  }
+
+  a:hover,
+  a:active {
+    color: var(--primary-color);
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.getintouch {
+  white-space: nowrap;
+}
+
+.bottom__end {
+  box-sizing: content-box;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  padding: 2rem 1.2rem;
+  transform: scale(1.6);
+  margin-right: 2.66rem;
+  border-radius: 0 0 6px 0;
+
+  @include respond(phone) {
+    padding: 4rem 1.2rem;
+    margin-right: 1.8rem;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  &:hover,
+  &:active {
+    background-color: var(--color-black);
+  }
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top__end {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  span {
+    color: var(--color-black);
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
+
+//icons
+
+.phone-icon,
+.mail-icon,
+.home-icon,
+.services-icon,
+.cloud-icon,
+.login-icon,
+.signup-icon {
+  width: 2rem;
+  color: var(--color-black);
+}
+
+//social-icons
+
+.social-text {
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.social-icons {
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+
+    @include respond(phone) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  &__icon {
+    color: var(--color-black);
+
+    &--facebook:hover {
+      color: #1877f2;
+    }
+    &--twitter:hover {
+      color: #1da1f2;
+    }
+    &--instagram:hover {
+      background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &--linkedin:hover {
+      color: #0a66c2;
+    }
+  }
+}

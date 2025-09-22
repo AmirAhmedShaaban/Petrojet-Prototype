@@ -1,0 +1,52 @@
+//hero
+
+.section-hero {
+  padding: 2.4rem 0 2.4rem 0;
+}
+
+.hero {
+  height: 74rem;
+  border-radius: 10px;
+  background: linear-gradient(
+      135deg,
+      rgb(196, 22, 28, 0.6),
+      rgb(230, 57, 70, 0.6),
+      rgb(139, 14, 19, 0.6)
+    ),
+    url(../assets/images/hero-img.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__container {
+  padding: 16rem 14rem 16rem 14rem;
+
+  @include respond(phone) {
+    padding: 8rem 14rem 18rem 14rem;
+  }
+}
+
+.hero__title {
+  color: var(--color-white);
+  font-size: 1.8rem;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 2.4rem;
+  margin: 1.4rem 0 4.8rem 0;
+}
+.hero__heading {
+  font-size: 5.2rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 4.8rem;
+}
+
+.hero__description {
+  color: var(--color-white);
+  font-size: 2rem;
+  letter-spacing: 0.6px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
