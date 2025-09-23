@@ -5,6 +5,15 @@
 This project is a **professional freelance prototype** developed to simulate and replicate the design of **Petrojet** as part of a client-oriented development exercise.  
 ⚠️ **Disclaimer:** This project has **no official relation** to the real Petrojet company. It was created independently for demonstration and professional development purposes.
 
+---
+
+This project is a simple yet structured web application composed of five main pages: **Home, Services, Cloud, Login, and Sign Up**.
+
+- The **Home page** functions as a landing page introducing _Petrojet_, presenting the company’s identity in a concise manner.
+- The **Services page** outlines the offerings provided.
+- The **Cloud page** represents the central feature of the system. After authentication, users are redirected here, and their name is displayed dynamically in the header.
+- The **Login** and **Sign Up** pages handle user authentication and registration.
+
 The project was built using:
 
 - **Sass** for styling.
